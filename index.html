@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container {
+      display: grid;
+      width: 748px;
+      height: 748px;
+      gap: 9px;
+      grid-template: 415px 324px / 320px 419px;
+      background-color: black;
+
+    }
+
+
+    .allitems {
+      background-color: whitesmoke;
+    }
+
+    .item1 {
+      background-color: #E72F24;
+
+    }
+
+    .item4 {
+      display: grid;
+      background-color: black;
+      gap: 9px;
+      grid-template: 324px/ 360px 50px;
+    }
+
+    .item42 {
+      background-color: whitesmoke;
+    }
+
+    .item3 {
+      display: grid;
+      background-color: black;
+      gap: 9px;
+      grid-template: 295px 20px / 320px;
+    }
+
+
+    .item3 > div {
+      background-color: whitesmoke;
+    }
+
+    .item41 {
+      display: grid;
+      background-color: black;
+      gap: 9px;
+      grid-template: 295px 20px / 360px;
+    }
+
+    .item411 {
+      background-color: whitesmoke;
+    }
+
+    .item412 {
+      display: grid;
+      background-color: black;
+      gap: 9px;
+      grid-template: 20px / 198px 153px;
+    }
+
+
+
+    .item4121 {
+      background-color: #F9D01E;
+    }
+
+    .item4122 {
+      background-color: #232629;
+    }
+
+    .item42 {
+
+      display: grid;
+      background-color: black;
+      gap: 10px;
+      grid-template: 130px 184px / 50px;
+
+    }
+
+    .item421 {
+      background-color: #004592;
+    }
+
+    .item422 {
+      background-color: whitesmoke;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <div class="allitems item1"></div>
+  <div class="allitems item2"></div>
+  <div class="allitems item3">
+    
+    <div class="item31"></div>
+    <div class="item32"></div>
+  
+  </div>
+  <div class="allitems item4">
+
+    <div class="item41">
+      <div class="item411"></div>
+      <div class="item412">
+        
+        <div class="item4121"></div>
+        <div class="item4122"></div>
+      
+      </div>
+    </div>
+
+    <div class="item42">
+
+      <div class="item421"></div>
+      <div class="item422"></div>
+
+    </div>
+  
+  </div>
+
+
+</div>
+
+
+</body>
+
+</html>
