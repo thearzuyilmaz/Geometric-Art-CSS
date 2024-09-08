@@ -4,8 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
+  <title>Mondrian Project Solution 2</title>
   <style>
+
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
 
 
     .container {
@@ -13,7 +22,7 @@
       width: 748px;
       height: 748px;
       gap: 9px;
-      grid-template: 415px 130px 165px 20px / 320px 198px 153px 50px;
+      grid-template: 415px 131px 155px 20px / 320px 198px 153px 50px;
       background-color: black;
 
     }
@@ -22,15 +31,39 @@
         background-color: whitesmoke;
     }
 
-    .white1{
-        span: 3;
+    .red {
+        background-color: #E72F24;    
     }
 
+    .white1 {
+        grid-column: span 3;
+    }
 
+    .white2 {
+        grid-row: span 2;
+    }
 
+    .white3 {
 
+        grid-area: 2 / 2 / 4 / 4;
+    }
 
+    .white4 {
+        grid-row: span 2;
+    }
 
+    .blue {
+        background-color: #004592;
+        border-bottom: solid 1px black;
+    }
+
+    .yellow {
+        background-color: #F9D01E;
+    }
+
+    .black {
+        background-color: #232629;
+    }
 
 
   </style>
@@ -38,18 +71,16 @@
 
 <body>
   <div class="container">
-  <div class="allitems red"></div>
-  <div class="allitems white1"></div>
-  <div class="allitems white2"></div>
-  <div class="allitems white3"></div>
-  <div class="allitems blue"></div>
-  <div class="allitems white4"></div>
-  <div class="allitems white5"></div>
-  <div class="allitems yellow"></div>
-  <div class="allitems black"></div>
-
-
-</div>
+    <div class="allitems red"></div>
+    <div class="allitems white1"></div>
+    <div class="allitems white2"></div>
+    <div class="allitems white3"></div>
+    <div class="allitems blue"></div>
+    <div class="allitems white4"></div>
+    <div class="allitems white5"></div>
+    <div class="allitems yellow"></div>
+    <div class="allitems black"></div>
+  </div>
 
 
 </body>
